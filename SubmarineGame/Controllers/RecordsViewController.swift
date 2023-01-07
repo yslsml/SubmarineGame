@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  RecordsViewController.swift
 //  SubmarineGame
 //
 //  Created by Milana Antonova on 7.01.23.
@@ -7,13 +7,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class RecordsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        print("Records VC")
     }
-
-
+    
 }
-

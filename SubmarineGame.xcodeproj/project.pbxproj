@@ -12,6 +12,9 @@
 		A91C51B32969B2D500858ADC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A91C51B12969B2D500858ADC /* Main.storyboard */; };
 		A91C51B52969B2D600858ADC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A91C51B42969B2D600858ADC /* Assets.xcassets */; };
 		A91C51B82969B2D600858ADC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A91C51B62969B2D600858ADC /* LaunchScreen.storyboard */; };
+		A91C51C12969B34400858ADC /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91C51C02969B34400858ADC /* StartViewController.swift */; };
+		A91C51C32969B36C00858ADC /* RecordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91C51C22969B36C00858ADC /* RecordsViewController.swift */; };
+		A91C51C52969B37A00858ADC /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91C51C42969B37A00858ADC /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		A91C51B42969B2D600858ADC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A91C51B72969B2D600858ADC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A91C51B92969B2D600858ADC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A91C51C02969B34400858ADC /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		A91C51C22969B36C00858ADC /* RecordsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordsViewController.swift; sourceTree = "<group>"; };
+		A91C51C42969B37A00858ADC /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,25 @@
 		A91C51AA2969B2D500858ADC /* SubmarineGame */ = {
 			isa = PBXGroup;
 			children = (
+				A91C51BF2969B33200858ADC /* Controllers */,
 				A91C51AB2969B2D500858ADC /* AppDelegate.swift */,
-				A91C51AF2969B2D500858ADC /* ViewController.swift */,
 				A91C51B12969B2D500858ADC /* Main.storyboard */,
 				A91C51B42969B2D600858ADC /* Assets.xcassets */,
 				A91C51B62969B2D600858ADC /* LaunchScreen.storyboard */,
 				A91C51B92969B2D600858ADC /* Info.plist */,
 			);
 			path = SubmarineGame;
+			sourceTree = "<group>";
+		};
+		A91C51BF2969B33200858ADC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A91C51AF2969B2D500858ADC /* ViewController.swift */,
+				A91C51C02969B34400858ADC /* StartViewController.swift */,
+				A91C51C22969B36C00858ADC /* RecordsViewController.swift */,
+				A91C51C42969B37A00858ADC /* SettingsViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +154,9 @@
 			files = (
 				A91C51B02969B2D500858ADC /* ViewController.swift in Sources */,
 				A91C51AC2969B2D500858ADC /* AppDelegate.swift in Sources */,
+				A91C51C12969B34400858ADC /* StartViewController.swift in Sources */,
+				A91C51C52969B37A00858ADC /* SettingsViewController.swift in Sources */,
+				A91C51C32969B36C00858ADC /* RecordsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
