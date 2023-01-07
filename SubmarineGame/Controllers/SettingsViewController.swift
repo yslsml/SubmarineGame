@@ -13,5 +13,9 @@ class SettingsViewController: UIViewController {
         super.viewDidLoad()
         print("Settings VC")
     }
-
+    
+    @IBAction func backButtonPressed(_ sender: UIButton) {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
 }

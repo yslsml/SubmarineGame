@@ -14,4 +14,8 @@ class RecordsViewController: UIViewController {
         print("Records VC")
     }
     
+    @IBAction func backButtonPressed(_ sender: UIButton) {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
 }

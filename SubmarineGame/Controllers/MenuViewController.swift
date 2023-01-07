@@ -7,7 +7,7 @@
 
 import UIKit
 
-class StartViewController: UIViewController {
+class MenuViewController: UIViewController {
 
     //MARK: - lifecycle funcs
     override func viewDidLoad() {
@@ -16,21 +16,18 @@ class StartViewController: UIViewController {
     
     //MARK: - IBActions
     @IBAction func startGameButtonPressed(_ sender: UIButton) {
-        let controller = self.storyboard?.instantiateViewController(withIdentifier: "ViewController") as! ViewController
-        controller.modalPresentationStyle = .fullScreen
-        self.present(controller, animated: true)
+        let controller = self.storyboard?.instantiateViewController(withIdentifier: "GameViewController") as! GameViewController
+        self.navigationController?.pushViewController(controller, animated: true)
     }
     
     @IBAction func recordsTableButtonPressed(_ sender: UIButton) {
         let controller = self.storyboard?.instantiateViewController(withIdentifier: "RecordsViewController") as! RecordsViewController
-        controller.modalPresentationStyle = .fullScreen
-        self.present(controller, animated: true)
+        self.navigationController?.pushViewController(controller, animated: true)
     }
     
     @IBAction func settingsButtonPressed(_ sender: UIButton) {
         let controller = self.storyboard?.instantiateViewController(withIdentifier: "SettingsViewController") as! SettingsViewController
-        controller.modalPresentationStyle = .fullScreen
-        self.present(controller, animated: true)
+        self.navigationController?.pushViewController(controller, animated: true)
     }
     
 }
